@@ -2,6 +2,7 @@
   "name": "trading_bot_hardhat",
   "version": "1.0.0",
   "description": "",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
@@ -17,5 +18,9 @@
     "@openzeppelin/contracts": "4.9.1",
     "@uniswap/v2-periphery": "1.1.0-beta.0",
     "hardhat": "2.15.0"
-  }
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "license": "MIT"
 }
