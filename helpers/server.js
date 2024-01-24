@@ -7,12 +7,14 @@ const cors = require("cors");
 const PORT = process.env.PORT || 6000;
 const app = express();
 
-app.get("/", (req, res) => {
-  res.json({ message: "I'm Alive" });
-});
+
 
 const server = http
   .createServer(app)
   .listen(PORT, () => console.log(`Listening on ${PORT}\n`)); 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors({ credentials: true, origin: "*" }));
+
+app.get("/", (req, res) => {
+  res.json({ message: "I'm Alive" });
+});
