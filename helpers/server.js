@@ -16,5 +16,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(cors({ credentials: true, origin: "*" }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "I'm Alive" });
+  res.send(  "I'm Alive"  );
 });
